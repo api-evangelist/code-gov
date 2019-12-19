@@ -1,0 +1,514 @@
+{
+    "id": "27c6eee7731424cd1dd609346a763056",
+    "name": "Code.gov API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "577e8ede60772aaf18afc830a4386f49",
+            "name": "Get a list of repos",
+            "url": "httpsapi.code.gov\/\/repos",
+            "description": "Get list of repositories indexed by Code.gov.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "Text to search for. This will make a full text search on all our index properties. Eg. rest api",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "Sets the size of the results returned. Default is 10.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "from",
+                    "description": "Sets the offset from where to paginate. Default is 0 (first element in the result set).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "agency.name",
+                    "description": "Filters search by the Agency's name. Eg. General Services Administration",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "agency.acronym",
+                    "description": "Filters search by the Agency's acronym. Eg. GSA",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "agency.website",
+                    "description": "Filters search by the Agency's website URL. Eg. https:\/\/gsa.gov",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "Filters search by the repository's status.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "vcs",
+                    "description": "Filters search by the version control system for the repository. Eg. git, svn",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Filters search by the repository's name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "organization",
+                    "description": "Filters search by the repository's organization.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags",
+                    "description": "Filters search by the repository's tags.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "languages",
+                    "description": "Filters search by programming languages. Eg. Python, Ruby",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contact.name",
+                    "description": "Filters search by the repository's contact name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contact.email",
+                    "description": "Filters search by the repository's contact email.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "permissions.licenses.name",
+                    "description": "Filters search by the repository's license name. Eg. MIT",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "permissions.usageType",
+                    "description": "Filters search by the repository's usage type. Eg. openSource, governmentWideReuse",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "laborHours",
+                    "description": "Filters search by the amount of labor hours dedicated to the project.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date.created",
+                    "description": "Filters search by the repository's created date. You can also use date.created_gte, date.created_lte, date.created_gt, date.created_lt to define ranges. Eg. 2018-02-01",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date.lastModified",
+                    "description": "Filters search by the last date the repository was modified. You can also use date.lastModified_gte, date.lastModified_lte, date.lastModified_gt, date.lastModified_lt to define ranges. Eg. 2018-02-01",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "27c6eee7731424cd1dd609346a763056",
+            "rawModeData": ""
+        },
+        {
+            "id": "7acc60ea5fac34038932c5b13330e43d",
+            "name": "Get information for specified repoId",
+            "url": "httpsapi.code.gov\/\/repos\/{repoId}",
+            "description": "Gets the information of a specific repository index with the passed repoId.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "repoId",
+                    "description": "ID of repo to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "27c6eee7731424cd1dd609346a763056",
+            "rawModeData": ""
+        },
+        {
+            "id": "df7611f61a0a93f04d8a4d78d2180fbf",
+            "name": "Get a list of terms",
+            "url": "httpsapi.code.gov\/\/terms",
+            "description": "Get a list of terms that were extracted from the repositories indexed.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "term",
+                    "description": "Filters the result set by the term value. The API will match the text to any part of the value. Eg. term=ox will return { ... \"term\": \"oxide\" ... }",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "term_type",
+                    "description": "Filters the result set by the term type. Eg. term_type=agency.acronym",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "size",
+                    "description": "Sets the size of the results returned. Default is 10.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "from",
+                    "description": "Sets the offset from where to paginate. Default is 0 (first element in the result set).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "27c6eee7731424cd1dd609346a763056",
+            "rawModeData": ""
+        },
+        {
+            "id": "4adf1d3d3d30d6de7d7359e158bca981",
+            "name": "Get a list of agencies",
+            "url": "httpsapi.code.gov\/\/agencies",
+            "description": "Get a list of agencies.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "size",
+                    "description": "Sets the size of the results returned. Default is 10.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "from",
+                    "description": "Sets the offset from where to paginate. Default is 0 (first element in the result set).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "27c6eee7731424cd1dd609346a763056",
+            "rawModeData": ""
+        },
+        {
+            "id": "4bf2a94510f28c8d036262ad50efa761",
+            "name": "Get a list of programming languages found in our code inventory.",
+            "url": "httpsapi.code.gov\/\/languages",
+            "description": "This returns a list of the programming languages that are used in the indexed code inventory. When a repo is index the programming language is extracted written to a file.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "size",
+                    "description": "Sets the size of the results returned. Default is 10.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "from",
+                    "description": "Sets the offset from where to paginate. Default is 0 (first element in the result set).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "27c6eee7731424cd1dd609346a763056",
+            "rawModeData": ""
+        },
+        {
+            "id": "aa7367efbb55bdfb5165abf227d8f21c",
+            "name": "Get the JSON schema for a repo",
+            "url": "httpsapi.code.gov\/\/repo.json",
+            "description": "Get the json schema for a repo.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "27c6eee7731424cd1dd609346a763056",
+            "rawModeData": ""
+        },
+        {
+            "id": "65a8677a8f543c841fa98640f739bb4e",
+            "name": "Get a list of agencies with their compliance status",
+            "url": "httpsapi.code.gov\/\/status.json",
+            "description": "Get a list of agencies with their Federal Source Code Policy compliance status ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "27c6eee7731424cd1dd609346a763056",
+            "rawModeData": ""
+        },
+        {
+            "id": "c4a4f2a5886d25c86e2e70c5a3d25aa4",
+            "name": "Get an HTML page rendering the agencies status from status.json",
+            "url": "httpsapi.code.gov\/\/status",
+            "description": "Get an html page rendering the agencies status from status.json.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "27c6eee7731424cd1dd609346a763056",
+            "rawModeData": ""
+        },
+        {
+            "id": "da41cdf08772488d23133a25a76aeea5",
+            "name": "Get a list of issues for a particular agency",
+            "url": "httpsapi.code.gov\/\/status\/{agencyName}\/issues",
+            "description": "Get a list of issues for a particular agency. These issues are grouped by software repository.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "agencyName",
+                    "description": "Agency name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "27c6eee7731424cd1dd609346a763056",
+            "rawModeData": ""
+        },
+        {
+            "id": "0109cf9ff57d7698c7071cdf446b9d98",
+            "name": "Get a list of repos by agency",
+            "url": "httpsapi.code.gov\/\/status\/{agencyName}\/fetched",
+            "description": "Lists out all repositories that have been indexed for a given agency.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "agencyName",
+                    "description": "Agency name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "27c6eee7731424cd1dd609346a763056",
+            "rawModeData": ""
+        },
+        {
+            "id": "bc4d1008780461db625329d7e2bcc712",
+            "name": "Get a list of repos by agency",
+            "url": "httpsapi.code.gov\/\/status\/{agencyName}\/discovered",
+            "description": "Get a list of repos by agency.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "agencyName",
+                    "description": "Agency name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "27c6eee7731424cd1dd609346a763056",
+            "rawModeData": ""
+        },
+        {
+            "id": "5ee5954574694e5c9a13cbded0fefe70",
+            "name": "Get the version of this API",
+            "url": "httpsapi.code.gov\/\/version",
+            "description": "Get the version of this api.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "27c6eee7731424cd1dd609346a763056",
+            "rawModeData": ""
+        }
+    ]
+}
