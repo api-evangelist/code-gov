@@ -1,0 +1,68 @@
+{
+    "name": "Code.gov",
+    "description": "<p><span>Code.gov leverages the power of code sharing and collaboration to help the US Government cut down on duplicative software development and save millions of taxpayer dollars for the American people.<\/span><\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/code-gov-logo.jpg",
+    "tags": [
+        "api provider",
+        "api service provider",
+        "developers",
+        "general data",
+        "github",
+        "have api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/code-gov\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Code.gov API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/code-gov-logo.jpg",
+            "humanURL": "https:\/\/code.gov\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/code-gov-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/code-gov-api-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/code-gov-api-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Applications",
+            "url": "https:\/\/code.gov\/#\/explore-code"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/api.code.gov\/docs\/"
+        },
+        {
+            "type": "Documentation",
+            "url": "https:\/\/api.code.gov\/docs\/#"
+        },
+        {
+            "type": "Road Map",
+            "url": "https:\/\/code.gov\/#\/roadmap"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/codedotgov"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/code.gov\/"
+        }
+    ]
+}
