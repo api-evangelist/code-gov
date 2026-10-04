@@ -41,7 +41,6 @@ apis:
   - name: Code.gov
     description: "The primary platform for Open Source and code sharing for the U.S. Federal Government"
     humanURL: https://code.gov
-    baseURL: https://code.gov
     tags:
       - Government
     properties:
